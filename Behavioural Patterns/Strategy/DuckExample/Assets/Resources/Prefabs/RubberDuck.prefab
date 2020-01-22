@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8155842267942829485}
   - component: {fileID: 6805407877158349943}
   - component: {fileID: 1205743802646071416}
+  - component: {fileID: -4052766533529306838}
   m_Layer: 0
   m_Name: RubberDuck
   m_TagString: Untagged
@@ -91,4 +92,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ed85aacd14fc9141a6b45738b5b536e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: Default Rubber
+  Name: Default
+  DuckType: 
+--- !u!65 &-4052766533529306838
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3929188016316834853}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.892334, y: 2.1742156, z: 2.4440432}
+  m_Center: {x: 0, y: 0.00000011920929, z: 0.00000011920929}

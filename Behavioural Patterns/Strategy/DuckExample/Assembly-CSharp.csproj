@@ -72,6 +72,8 @@
      <Compile Include="Assets\Scripts\Duck\RedHeadDuck.cs" />
      <Compile Include="Assets\Scripts\Duck\RubberDuck.cs" />
      <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
+     <Compile Include="Assets\Scripts\Managers\InputManager.cs" />
+     <Compile Include="Assets\Scripts\View\DuckInfoView.cs" />
      <None Include="Assets\3rd Part\DOTween\readme.txt" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>D:/My Projects/Unity/Design Patterns Examples/Behavioural Patterns/Strategy/DuckExample/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

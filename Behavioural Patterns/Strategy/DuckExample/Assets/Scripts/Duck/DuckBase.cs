@@ -9,8 +9,8 @@ namespace Duck
     public class DuckBase : MonoBehaviour
     {
         public string Name;
+        public string DuckType;
         
-        protected string DuckType;
         protected IFlyBehaviour FlyBehaviour;
 
         private void Awake()
@@ -29,6 +29,11 @@ namespace Duck
             FlyBehaviour = flyBehaviour;
         }
 
+        public IFlyBehaviour GetFlyBehavior()
+        {
+            return FlyBehaviour;
+        }
+        
         private IEnumerator StartMoving()
         {
             while (true)

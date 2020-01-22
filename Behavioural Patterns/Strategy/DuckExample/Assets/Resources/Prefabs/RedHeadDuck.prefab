@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4031184847666940401}
   - component: {fileID: 1778728881278294059}
   - component: {fileID: 5244859533132707272}
+  - component: {fileID: 3571890639304832611}
   m_Layer: 0
   m_Name: RedHeadDuck
   m_TagString: Untagged
@@ -27,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8095710407134564473}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 3, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -91,4 +92,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd6233feb07a8bb4cb13c52aa4e950d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: Default Red Head Duck
+  Name: Default
+  DuckType: 
+--- !u!65 &3571890639304832611
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8095710407134564473}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.892334, y: 2.1742156, z: 2.4440432}
+  m_Center: {x: 0, y: 0.00000011920929, z: 0.00000011920929}

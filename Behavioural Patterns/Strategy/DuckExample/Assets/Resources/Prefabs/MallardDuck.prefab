@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8155842267942829485}
   - component: {fileID: 6805407877158349943}
   - component: {fileID: -8760911472750236953}
+  - component: {fileID: 5563608893111112652}
   m_Layer: 0
   m_Name: MallardDuck
   m_TagString: Untagged
@@ -27,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3929188016316834853}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -3, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -91,4 +92,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c60e46b344d9a147be47468218515bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Name: Default Mallard
+  Name: Default
+  DuckType: 
+--- !u!65 &5563608893111112652
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3929188016316834853}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.892334, y: 2.1742156, z: 2.4440432}
+  m_Center: {x: 0, y: 0.00000011920929, z: 0.00000011920929}
