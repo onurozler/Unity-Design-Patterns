@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\ONUR OZLER\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\ONUR OZLER\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_New Unity Project (1).1638781604.00" t="ExcludeRecursive" />
+    <e p="D:\My Projects\Unity\Design Patterns Examples\Behavioural Patterns\Strategy\DuckExample\New Unity Project (1)" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="3rd Part" t="Include">
+          <e p="DOTween" t="Include">
+            <e p="Modules" t="Include">
+              <e p="DOTweenModuleAudio.cs" t="Include" />
+              <e p="DOTweenModulePhysics.cs" t="Include" />
+              <e p="DOTweenModulePhysics2D.cs" t="Include" />
+              <e p="DOTweenModuleSprite.cs" t="Include" />
+              <e p="DOTweenModuleUI.cs" t="Include" />
+              <e p="DOTweenModuleUnityVersion.cs" t="Include" />
+              <e p="DOTweenModuleUtils.cs" t="Include" />
+            </e>
+            <e p="readme.txt" t="Include" />
+          </e>
+        </e>
+        <e p="Plugins" t="Include">
+          <e p="AdjustPivot" t="Include">
+            <e p="Editor" t="Include">
+              <e p="AdjustPivot.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="Duck" t="Include">
+            <e p="DuckBase.cs" t="Include" />
+            <e p="MallardDuck.cs" t="Include" />
+            <e p="RedHeadDuck.cs" t="Include" />
+            <e p="RubberDuck.cs" t="Include" />
+          </e>
+          <e p="Duck Behaviors" t="Include">
+            <e p="FlyNormal.cs" t="Include" />
+            <e p="FlyNoWay.cs" t="Include" />
+            <e p="FlyZigzag.cs" t="Include" />
+            <e p="IFlyBehaviour.cs" t="Include" />
+          </e>
+          <e p="Managers" t="Include">
+            <e p="GameManager.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="New Unity Project (1).sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
