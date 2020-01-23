@@ -1,11 +1,11 @@
 ﻿using Command.ConcreteCommands.Helpers;
-using Player;
+using Character;
 using UnityEngine;
 
 namespace Command.ConcreteCommands
 {
-    // Generic Move Command for every class that derived PlayerBase
-    public class MoveCommand<T> : ICommand where T:PlayerBase
+    // Generic Move Command for every class that derived CharacterBase
+    public class MoveCommand<T> : ICommand where T:CharacterBase
     {
         private MoveDirection _moveDirection;
         private T _playerBase;
@@ -21,16 +21,16 @@ namespace Command.ConcreteCommands
             switch (_moveDirection)
             {
                 case MoveDirection.FORWARD:
-                    _playerBase.transform.Translate(Vector3.forward * 5f);
+                    _playerBase.MoveForward();
                     break;
                 case MoveDirection.BACK:
-                    _playerBase.transform.Translate(Vector3.back * 5f);
+                    _playerBase.MoveBack();
                     break;
                 case MoveDirection.LEFT:
-                    _playerBase.transform.Translate(Vector3.left * 5f);
+                    _playerBase.MoveLeft();
                     break;
                 case MoveDirection.RIGHT:
-                    _playerBase.transform.Translate(Vector3.right * 5f);
+                    _playerBase.MoveRight();
                     break;
             }
         }
@@ -40,18 +40,23 @@ namespace Command.ConcreteCommands
             switch (_moveDirection)
             {
                 case MoveDirection.FORWARD:
-                    _playerBase.transform.Translate(Vector3.back * 5f);
+                    _playerBase.MoveBack();
                     break;
                 case MoveDirection.BACK:
-                    _playerBase.transform.Translate(Vector3.forward * 5f);
+                    _playerBase.MoveForward();
                     break;
                 case MoveDirection.LEFT:
-                    _playerBase.transform.Translate(Vector3.right * 5f);
+                    _playerBase.MoveRight();
                     break;
                 case MoveDirection.RIGHT:
-                    _playerBase.transform.Translate(Vector3.left * 5f);
+                    _playerBase.MoveLeft();
                     break;
             }
+        }
+
+        public MoveDirection GetMoveDirection()
+        {
+            return _moveDirection;
         }
     }
 }

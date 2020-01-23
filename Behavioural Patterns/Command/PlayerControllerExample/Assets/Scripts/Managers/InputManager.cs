@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using Command;
+﻿using System.Collections.Generic;
 using Command.ConcreteCommands;
 using Command.ConcreteCommands.Helpers;
-using Player;
+using Character;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,7 +10,9 @@ namespace Managers
     // Invoker
     public class InputManager : MonoBehaviour
     {
-        [SerializeField] private PlayerBase _player;
+        [SerializeField] private Player character;
+        
+        
         [SerializeField] private Button _buttonUP;
         [SerializeField] private Button _buttonDOWN;
         [SerializeField] private Button _buttonRIGHT;
@@ -20,15 +20,15 @@ namespace Managers
         [SerializeField] private Button _buttonUNDO;
         [SerializeField] private Button _buttonREDO;
 
-        private Stack<MoveCommand<PlayerBase>> _moveCommandsStack = new Stack<MoveCommand<PlayerBase>>();
-        private Stack<MoveCommand<PlayerBase>> _redoCommandsStack = new Stack<MoveCommand<PlayerBase>>();
+        private Stack<MoveCommand<Player>> _moveCommandsStack = new Stack<MoveCommand<Player>>();
+        private Stack<MoveCommand<Player>> _redoCommandsStack = new Stack<MoveCommand<Player>>();
 
         private void Awake()
         {
-            MoveCommand<PlayerBase> moveCommandUP = new MoveCommand<PlayerBase> (_player,MoveDirection.FORWARD);
-            MoveCommand<PlayerBase> moveCommandDOWN = new MoveCommand<PlayerBase> (_player,MoveDirection.BACK);
-            MoveCommand<PlayerBase> moveCommandLEFT = new MoveCommand<PlayerBase> (_player,MoveDirection.LEFT);
-            MoveCommand<PlayerBase> moveCommandRIGHT = new MoveCommand<PlayerBase> (_player,MoveDirection.RIGHT);
+            MoveCommand<Player> moveCommandUP = new MoveCommand<Player> (character,MoveDirection.FORWARD);
+            MoveCommand<Player> moveCommandDOWN = new MoveCommand<Player> (character,MoveDirection.BACK);
+            MoveCommand<Player> moveCommandLEFT = new MoveCommand<Player> (character,MoveDirection.LEFT);
+            MoveCommand<Player> moveCommandRIGHT = new MoveCommand<Player> (character,MoveDirection.RIGHT);
             
             _buttonREDO.interactable = false;
 
@@ -61,7 +61,7 @@ namespace Managers
                 {
                     _buttonREDO.interactable = true;
                     
-                    MoveCommand<PlayerBase> command = _moveCommandsStack.Pop();
+                    MoveCommand<Player> command = _moveCommandsStack.Pop();
                     _redoCommandsStack.Push(command);
                     command.Undo();
                 }
@@ -71,7 +71,7 @@ namespace Managers
             {
                 if (_redoCommandsStack.Count > 0)
                 {
-                    MoveCommand<PlayerBase> command = _redoCommandsStack.Pop();
+                    MoveCommand<Player> command = _redoCommandsStack.Pop();
                     _moveCommandsStack.Push(command);
                     command.Execute();
                 }
