@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\ONUR OZLER\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\ONUR OZLER\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_TrafficSimulation.-13912329.00" t="ExcludeRecursive" />
+    <e p="D:\My Projects\Unity\Design Patterns Examples\Behavioural Patterns\State\TrafficSimulation" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="Base" t="Include">
+            <e p="Car.cs" t="Include" />
+            <e p="TrafficLight.cs" t="Include" />
+          </e>
+          <e p="Managers" t="Include">
+            <e p="CarController.cs" t="Include" />
+          </e>
+          <e p="State" t="Include">
+            <e p="CarStates" t="Include">
+              <e p="CarDriveForwardState.cs" t="Include" />
+              <e p="CarWaitingState.cs" t="Include" />
+              <e p="ICarState.cs" t="Include" />
+            </e>
+            <e p="TrafficLights" t="Include">
+              <e p="ITrafficLightState.cs" t="Include" />
+              <e p="TrafficLightGreenState.cs" t="Include" />
+              <e p="TrafficLightRedState.cs" t="Include" />
+              <e p="TrafficLightYellowState.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Utils" t="Include">
+            <e p="Timer.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+      <e p="TrafficSimulation.sln" t="IncludeFlat" />
+    </e>
+  </component>
+</project>
