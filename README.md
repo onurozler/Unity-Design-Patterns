@@ -8,12 +8,15 @@ I try to show you in which cases they can be useful by applying  real-world exam
 
 ## Content
 Examples are simplified as much as possible. You can find more details for each specific pattern linked below. There are just few examples
-right now, they will be updated following weeks.
+right now, others will be added following weeks.
 
 ### Behavioral Patterns
 - [Strategy Pattern](https://github.com/onurozler/Unity-Design-Patterns/tree/master/Behavioural%20Patterns/Strategy/)
 - [Command Pattern](https://github.com/onurozler/Unity-Design-Patterns/tree/master/Behavioural%20Patterns/Command/)
 - [State Pattern](https://github.com/onurozler/Unity-Design-Patterns/tree/master/Behavioural%20Patterns/State/)
+
+## Contribution
+Contribution is very welcomed! I would love if you fix my bugs or contribute patterns with new examples.
 
 # References
 I highly recommend you to take a look these projects that are implemented in Unity.
