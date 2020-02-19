@@ -15,6 +15,7 @@ right now, others will be added following weeks.
 - [Command Pattern](https://github.com/onurozler/Unity-Design-Patterns/tree/master/Behavioural%20Patterns/Command/)
 - [State Pattern](https://github.com/onurozler/Unity-Design-Patterns/tree/master/Behavioural%20Patterns/State/)
 - [Observer Pattern](https://github.com/onurozler/Unity-Design-Patterns/tree/master/Behavioural%20Patterns/Observer)
+- [Subclass Sandbox](https://github.com/onurozler/Unity-Design-Patterns/tree/master/Behavioural%20Patterns/Subclass%20Sandbox/)
 
 ## Contribution
 Contribution is very welcomed! I would love if you fix my bugs or contribute patterns with new examples.
